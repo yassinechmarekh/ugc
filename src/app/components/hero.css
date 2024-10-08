@@ -1,0 +1,120 @@
+
+#hero {
+    width: 100%;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+  
+
+}
+
+#heroimgugc {
+    width: 350px;
+    border-radius: 500px 10px 10px 10px;
+    height: 350px;
+    background-image: url(../../../public/ugcmr.jpg);
+    background-position: left;
+    background-size: cover;
+    position: relative;
+}
+
+#hero h1 {
+    font-family: var(--signafont);
+    font-weight: bold;
+    font-size: 5rem;
+
+}
+
+#herotxt {
+    width: 50%;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#herotxt p {
+    font-family: var(--parafont);
+    font-size: 1.1rem;
+    margin-top: 5px;
+
+}
+
+#herotxt a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#herotxt div {
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    background-color: var(--light-color);
+    font-family: var(--signafont);
+  transition: background-color 1s ease-in-out,color 1s ease-in-out;
+    color: var(--dark-color);
+    align-self: center;
+    margin-top: 15px;
+}
+#herotxt div:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: solid var(--semi-dark) .3px;
+}
+
+#star1 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 10%;
+    left: 55%;
+
+
+}
+
+#particlehero {
+    position: absolute;
+    width: 150px;
+    height: auto;
+ 
+    bottom: 0%;
+    right: 0;
+
+
+}
+
+#star2 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 30%;
+
+
+
+}
+@media (max-width:1023px){
+    #hero{
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+    #herotxt{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #star1{
+        width: 80px;
+     
+        left: 70%;
+        top: 5px;
+    }
+    #star2{
+        top: 0%;
+    }
+}

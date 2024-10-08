@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#closenav{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+}
+#navphone{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: right;
+    transition:  transform 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-color);
+    z-index: 9999;
+}
+#nav {
+    background-color: var(--dark-color);
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+align-items: center;
+    padding: 15px 5%;
+    font-family: var(--titlefont);
+    font-weight: bold;
+    color: var(--light-color);
+}
+
+#nav span:first-of-type {}
+
+#listpc {
+    display: flex;
+    list-style: none;
+    justify-self: center;
+
+    width: 40%;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+#nav ul li{
+    padding: 15px;
+    border-radius: 35px;
+    transition: background-color .3s ;
+}
+#nav ul li:hover {
+    background-color: var(--brown);
+}
+#navphone ul{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    list-style: none;
+}
+#navphone ul li{
+    width: 100%;
+    text-align: center;
+}
+#navphone ul li:hover{
+background-color: var(--brown);
+
+    
+}
+#contact{
+    padding: 15px;
+    border-radius: 35px;
+    transition: background-color .3s ;
+}
+#contact:hover {
+    background-color: var(--brown);
+}
+#menuicon{
+    display: none;
+}
+@media (max-width:1023px){
+    #menuicon{
+        display: flex;
+        width: 30px;
+    }
+    #listpc{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+  
+}
